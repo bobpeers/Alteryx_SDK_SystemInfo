@@ -1,2 +1,2 @@
-# Alteryx_SDK_SystemInfo
+# Alteryx SDK SystemInfo
 Gather system information from Alteryx machine
