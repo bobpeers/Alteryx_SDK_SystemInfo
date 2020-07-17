@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<AlteryxJavaScriptPlugin>
+  <EngineSettings EngineDll="Python" EngineDllEntryPoint="SystemEngine.py" SDKVersion="10.1" />
+  <GuiSettings Html="SystemInfoGUI.html" Icon="Systeminfo/SystemInfoIcon.png" Help="https://github.com/bobpeers/Alteryx_SDK_SystemInfo" SDKVersion="10.1">
+    <OutputConnections>
+      <Connection Name="Output" AllowMultiple="False" Optional="False" Type="Connection" Label="O"/>
+    </OutputConnections>
+  </GuiSettings>
+  <Properties>
+    <MetaInfo>
+      <Name>System Information</Name>
+      <Description>Read System Information including Platform, CPU, Memory, Disks, Network, Processes, Services and Environment Variables.</Description>
+      <CategoryName>Developer</CategoryName>
+      <SearchTags>python, system, os</SearchTags>
+      <ToolVersion>1.0</ToolVersion>
+      <Author>Bob Peers</Author>
+      <Company></Company>
+      <Copyright>2020</Copyright>
+    </MetaInfo>
+  </Properties>
+</AlteryxJavaScriptPlugin>

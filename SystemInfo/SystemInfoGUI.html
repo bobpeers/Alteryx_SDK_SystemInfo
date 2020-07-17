@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html style="padding:20px">
+
+<head>
+  <meta charset="utf-8">
+  <title>System Information</title>
+  <script type="text/javascript">
+    document.write('<link rel="import" href="' + window.Alteryx.LibDir + '2/lib/includes.html">');
+  </script>
+
+<body>
+  <h1>System Information</h1>
+  <section>
+    <div class='info'>Retrieves system in formation from the running machine. Includes:
+      <ul>
+        <li>General information</li>
+        <li>Platform</li>
+        <li>CPU</li>
+        <li>Memory</li>
+        <li>Disks</li>
+        <li>Network</li>
+        <li>Processes (optional)</li>
+        <li>Services (optional)</li>
+      </ul>
+    </div>
+  </section>
+  <form>
+    <fieldset>
+      <legend>XMSG("Options")</legend>
+      <section>
+        <ayx id="processes" data-ui-props="{type:'CheckBox', label:'Include Processes'}"
+          data-item-props="{dataName:'processes'}"></ayx>
+      </section>
+      <section>
+        <ayx id="services" data-ui-props="{type:'CheckBox', label:'Include Services'}"
+          data-item-props="{dataName:'services'}"></ayx>
+      </section>
+      <section>
+        <ayx id="environ" data-ui-props="{type:'CheckBox', label:'Include Environment Variables'}"
+          data-item-props="{dataName:'environ'}"></ayx>
+      </section>
+    </fieldset>
+  </form>
+  <style>
+    .info {
+      border: 2px solid #889699;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    .info>div {
+      margin: 10px 0 10px 0;
+    }
+
+    body {
+      font-size: 10pt;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    legend {
+      border: none;
+    }
+
+    fieldset {
+      border: 2px solid #889699;
+      border-radius: 5px;
+    }
+
+    section,
+    label,
+    select,
+    checkbox,
+    ayx {
+      padding: 10px 0 10px 0;
+    }
+  </style>
+</body>
+
+</html>
