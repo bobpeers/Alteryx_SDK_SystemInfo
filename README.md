@@ -10,7 +10,7 @@ Download the yxi file and double click to install in Alteyrx. The tool will be i
 This tool has no inputs. Place tool on the canvas and optionally configure the tools settings. The tool outputs data on:
 
 - General Information
-- Platofrm Information
+- Platform Information
 - CPU
 - Memory
 - Disks
