@@ -1,10 +1,14 @@
 # Alteryx SDK SystemInfo
-Alteryx tool to gather system information from machine
+Alteryx tool to gather system information from the machine running the workflow
 
 ## Installation
 Download the yxi file and double click to install in Alteyrx. The tool will be installed in the __Developer__ category.
 
 ![alt text](https://github.com/bobpeers/Alteryx_SDK_SystemInfo/blob/master/images/systeminfo.png "Alteryx Developer Category")
+
+## Requirements
+
+[psutil](https://github.com/giampaolo/psutil) will be installed on the target machine during installation
 
 ## Usage
 This tool has no inputs. Place tool on the canvas and optionally configure the tools settings. The tool outputs data on:
