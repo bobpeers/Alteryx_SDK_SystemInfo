@@ -40,6 +40,18 @@ class AyxPlugin:
                 return f"{bytes:.2f} {unit}{suffix}"
             bytes /= factor
 
+    def is_admin(self):
+        if os.name == 'nt':
+            try:
+                # only windows users with admin privileges can read the C:\windows\temp
+                temp = os.listdir(os.sep.join([os.environ.get('SystemRoot','C:\\windows'),'temp']))
+            except:
+                return ('No')
+            else:
+                return ('Yes')
+        else:
+            return ('Unknown')
+
     def getSystemInfo(self):
         try:
             info=[]
@@ -47,6 +59,8 @@ class AyxPlugin:
             info.append(('General','User', getpass.getuser()))
             info.append(('General', 'Current Time', datetime.now().strftime('%Y/%m/%#d %H:%M:%S')))
 
+            # Is admin account
+            info.append(('General', 'Admin User', self.is_admin()))
             #Platform Info
             info.append(('Platform', 'Platform', platform.platform()))
             info.append(('Platform', 'System', platform.system()))
